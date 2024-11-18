@@ -1,0 +1,39 @@
+:root{
+--bg:cyan;
+--primary:pink;
+--secondary:orange;
+--three:green;
+
+}
+*{
+
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    border: var(--bg) solid 4px;
+    background-color: var(--primary);
+}
+ul{
+  
+    text-align: center;
+    padding-right: 50px;
+}
+li{
+    background-color: var(--primary);
+  overflow: hidden;
+
+}
+fieldset{
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 0 50px 0 50px
+}
+.faite{
+
+    color: var(--three)
+}
+
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exercice_dom_04.css">
+    <script type="module" src="exercice_dom_04.js"></script>
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Gestion des tâches</h1>
+    <fieldset>
+
+        <select id="task-filter">
+            <option value="all">Toutes</option>
+            <option value="todo">Faites</option>
+            <option value="donne">A faire</option>
+        </select>
+
+        
+
+    </fieldset>
+    <ul id="task-list">
+        <li class="ma-tache">
+            <input type="checkbox" name="" id="checkbox1">
+            <label for="checkbox10">Faire les courses</label>
+            <button id="task-delete">Supprimer</button>
+        </li>
+
+        <li class="ma-tache">
+            <input type="checkbox" name="" id="checkbox2">
+            <label for="checkbox2">Nettoyer la maison</label>
+            <button>Supprimer</button>
+        </li>
+        <li class="ma-tache">
+            <input type="checkbox" name="" id="checkbox3">
+            <label for="checkbox3">Préparer le dîner</label>
+            <button>Supprimer</button>
+        </li>
+    </ul>
+    <fieldset>
+
+        <label for="task-name">Intitulé de la tâche</label>
+        <input id="task-name" type="test">
+        <button id="task-save">Enregistrer</button>
+
+    </fieldset>
+</body>
+
+</html>

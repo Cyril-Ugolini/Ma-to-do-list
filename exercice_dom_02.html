@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice : Modification du contenu et des attributs</title>
+  <style>
+    .highlight {
+      color: red;
+    }
+  </style>
+  <script type="module">
+    // Complétez le code JavaScript ci-dessous
+
+    // 1. Modifiez le texte du titre
+    const monTitre = document.getElementById("titre");
+    monTitre.textContent = ("Coucou les voisinous");
+
+    // 2. Ajoutez du contenu HTML au paragraphe
+    const monParagraphe = document.getElementById("paragraphe");
+    const Paragraphe = monParagraphe.textContent;
+    monParagraphe.innerHTML = Paragraphe + "<h3> voici </h3>";
+
+    // 3. Changez la source de l'image
+    const monImage = document.getElementById("image");
+    monImage.src = (" OIP.jpg");
+    // 4. Ajoutez un attribut "disabled" au bouton
+    const monBouton = document.getElementById("bouton");
+    monBouton.setAttribute("disabled", "");
+
+    // 5. Ajoutez la classe "highlight" au paragraphe
+
+    monParagraphe.classList.add("highlight");
+
+    // Bonus : Créez une fonction qui alterne la classe "highlight" sur le paragraphe lors du clic sur le bouton
+
+
+  </script>
+</head>
+
+<body>
+  <h1 id="titre">Titre original</h1>
+  <p id="paragraphe">Contenu du paragraphe</p>
+  <img id="image" src="https://placehold.co/600x400" alt="Image placeholder">
+  <button id="bouton">Cliquez-moi</button>
+  <button onclick="toggleButtonText (this)"></button>
+
+</body>
+
+</html>
